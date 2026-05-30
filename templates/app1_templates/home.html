@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- bringing backend data to frontend -->
+    <table border="1">
+        <tr>
+            <th>Teacher id</th>
+            <th>Teacher name</th>
+            <th>Teacher salary </th>
+            <th>Teacher Email</th>
+            <th>Teacher subject</th>
+        </tr>
+        <!-- iterating the data variable: which has all records -->
+        {% for x in data %}
+        <tr>
+            <td>{{x.teacher_id}}</td>
+            <td>{{x.teacher_name}}</td>
+            <td>{{x.teacher_salary}}</td>
+            <td>{{x.teacher_email}}</td>
+            <td>{{x.teaching_subject}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

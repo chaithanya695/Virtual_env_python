@@ -7,12 +7,12 @@ class Teachers(models.Model):
     teacher_email=models.EmailField(unique=True)
 
     select_subject=[
-        ('T','TELUGU'),
-        ('H','HINDI'),
-        ('E','ENGLISH'),
-        ('M','MATHS'),
-        ('S','SCIENCE'),
-        ('SO','SOCIAL')
+        ('TELUGU','TELUGU'),
+        ('HINDI','HINDI'),
+        ('ENGLISH','ENGLISH'),
+        ('MATHS','MATHS'),
+        ('SCIENCE','SCIENCE'),
+        ('SOCIAL','SOCIAL')
     ]
 
     teaching_subject=models.CharField(max_length=20,choices=select_subject)

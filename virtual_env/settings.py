@@ -24,7 +24,7 @@ TEMPLATES_DIR=BASE_DIR/"templates"
 SECRET_KEY = 'django-insecure-86)tm4tk58gg49rh^2&=0n6!#cx99isamm5!4&@ttqkt_dq3iz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['virtual-env-python.onrender.com']
 CSRF_TRUSTED_ORIGINS = [
@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
